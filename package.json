@@ -1,0 +1,41 @@
+{
+  "name": "wba-project",
+  "version": "1.0.0",
+  "description": "WBA",
+  "main": "index.js",
+  "scripts": {
+    "local": "cross-env NODE_ENV=local nodemon --exec babel-node ./bin/www",
+    "QA": "cross-env NODE_ENV=QA nodemon --exec babel-node ./bin/www",
+    "UAT": "cross-env NODE_ENV=UAT nodemon --exec babel-node ./bin/www",
+    "prod": "cross-env NODE_ENV=prod nodemon --exec babel-node ./bin/www",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix . --ext .js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.0.1",
+    "body-parser": "^1.18.3",
+    "convert-excel-to-json": "^1.6.1",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.9",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.10",
+    "@babel/node": "^7.2.10",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-hash-resolve": "^1.0.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
